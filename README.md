@@ -4,6 +4,13 @@ A benchmark for comparing reinforcement learning agents and rule-based baselines
 on racing tracks. Training runs in Python (Gymnasium + Stable-Baselines3);
 results are meant to be replayed in 3D in the browser (Three.js).
 
+## 🎥 Demo
+
+
+https://github.com/user-attachments/assets/dbe226fe-243a-4f8e-8d9b-53ed038035ae
+
+
+
 ## How it works
 
 - **Environment:** a car drives around a closed track. It sees 7 distance
