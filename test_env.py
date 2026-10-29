@@ -15,12 +15,12 @@ def run(env, policy, seed=0):
 
 
 env = RacingEnv()
-check_env(env)   # проверка, че интерфейсът е валиден за gym/SB3
+check_env(env) 
 print("check_env: OK")
 
 random_policy = lambda obs: env.action_space.sample()
 
-# ръчен алгоритъм: газ 0.3, завива към страната с повече място
+# hands algorithm: gas 0.3, sliding towards the side with more space
 def wall_follow(obs):
     steer = 2.0 * (obs[5] + obs[6] - obs[0] - obs[1])
     return np.array([0.3, np.clip(steer, -1, 1)], dtype=np.float32)
